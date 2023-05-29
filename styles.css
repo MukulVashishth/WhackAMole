@@ -6,7 +6,7 @@
 
 .container {
     min-height: 100vh;
-    width: 100vw;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,12 +54,16 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 600px;
 }
 
 .square {
     width: 180px;
     height: 170px;
     border: 1px solid black;
+    border-radius: 50%;
     box-shadow: 1px 1px 3px black;
     margin: 10px;
 }
@@ -68,3 +72,49 @@ button:hover {
     background: url('Assets/mole.png');
     background-size: cover;
 }
+
+#pauseGame {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    
+    .square {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  
+  @media (max-width: 675px) {
+      
+      .grid
+      {
+          width: 90%;
+      }
+    .square {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  
+  @media (max-width: 540px) {
+      .grid
+      {
+          width: 75%;
+      }
+    .square {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+      .grid
+      {
+          width: 65%;
+      }
+    .square {
+      width: 80px;
+      height: 80px;
+    }
+  }
